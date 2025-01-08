@@ -12,6 +12,8 @@ public class AdminController {
     @Autowired
     AdminServiceImpl adminService;
 
+//    System.out.println("Hello World");
+
     @PostMapping("/register")
     public ResponseEntity<Void> registerAdmin(@RequestParam String username, @RequestParam String password){
         //create an admin and return
